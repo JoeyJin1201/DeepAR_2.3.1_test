@@ -111,6 +111,7 @@
     </div>
 
     <div class="effect-carousel">
+      <div><img class="thumb" src="thumbs/eye_color_final_mask.png"></div>
       <div><img class="thumb" src="thumbs/galaxy.png"></div>
       <div><img class="thumb" src="thumbs/aviators.png"></div>
       <div><img class="thumb" src="thumbs/beard.png"></div>
@@ -150,7 +151,7 @@
 
           // or we can setup the video element externally and call deepAR.setVideoElement (see startExternalVideo function below)
 
-          deepAR.switchEffect(0, 'slot', './effects/background_segmentation', function() {
+          deepAR.switchEffect(0, 'slot', './effects/eye_color_final_mask', function() {
             // effect loaded
           });
         }
@@ -249,6 +250,7 @@
         });
 
         var effects = [
+          './effects/eye_color_final_mask',
           './effects/background_segmentation',
           './effects/aviators',
           './effects/beard',
